@@ -3,7 +3,7 @@ import Dashboard from 'layout/Dashboard';
 import {Navigate} from 'react-router-dom';
 
 function PrivateRoute() {
-  const auth = false;
+  const auth = true;
   return auth ? <Dashboard /> : <Navigate to='/actions/sign-in' />;
 }
 
